@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Base */
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/* Header */
+
+.header {
+   position: relative;
+   overflow: hidden;
+   padding-top: 80px;
+   padding-bottom: 80px;
+   /* background: #252525 linear-gradient(158deg, #2f2f2f 0%, #202020 100%); */
+   background-color: #000;
+   color: #fff;
+   border-bottom-right-radius: 100px;
+}
+.header .container {
+   position: relative;
+   z-index: 1;
+}
+
+.header-video {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   border-bottom-right-radius: 100px;
+   opacity: 0.35;
+}
+.header-row {
+   display: flex;
+   align-items: center;
+   column-gap: 60px;
+}
+.header-img {
+   border-radius: 80px;
+}
+.header-title {
+   margin-bottom: 10px;
+   font-weight: 700;
+   font-size: 60px;
+}
+.header-text {
+margin-bottom: 20px;
+font-size: 26px;
+font-weight: 300;
+}
+.header-btns {
+   display: flex;
+   column-gap: 20px;
+}
+.header-btn {
+   height: 48px;
+   padding-top: 15px;
+   padding-right: 25px;
+   padding-left: 25px;
+   background-color: #000;
+   border-radius: 8px;
+   color: #fff;
+   line-height: 1;
+   transition: all 0.2s ease-in;
+}
+.header-btn-outline {
+   height: 48px;
+   padding-top: 15px;
+   padding-right: 25px;
+   padding-left: 25px;
+   border: 1px solid #3b3b3b;
+   border-radius: 8px;
+   color: #fff;
+   line-height: 1;
+   transition: all 0.2s ease-in;
+}
+.header-btn:hover {
+   background-color: #1782CF;
+}
+.header-btn-outline:hover {
+   border-color: #1782CF;
+}
+
+/* Portfolio */
+
+.portfolio {
+   padding: 80px 0;
+}
+.portfolio-title {
+   margin-bottom: 65px;
+   font-size: 52px;
+   font-weight: 700;
+   text-align: center;
+}
+.projects {
+   display: flex;
+   flex-direction: column;
+   row-gap: 70px;
+   align-items: center;
+}
+.project {
+   text-align: center;
+}
+.project-img {
+   margin-bottom: 30px;
+   border-radius: 30px;
+   transition: opacity 0.2s ease-in;
+}
+.project-img:hover {
+   opacity: 0.8;
+}
+.project-title {
+   font-size: 22px;
+}
+.project-title a {
+   color: #000;
+   text-decoration: underline;
+}
+
+/* Contacts */
+
+.contacts {
+   padding-top: 80px;
+   padding-bottom: 80px;
+   background: #252525 linear-gradient(158deg, #2f2f2f 0%, #202020 100%);
+   color: #fff;
+   border-top-left-radius: 100px;
+}
+.contacts-title {
+   margin-bottom: 65px;
+   font-size: 52px;
+   font-weight: 700;
+   text-align: center;
+}
+.massangers {
+   display: flex;
+   column-gap: 30px;
+   row-gap: 30px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.massanger {
+   display: flex;
+   max-width: 270px;
+   column-gap: 15px;
+   align-items: center;
+   flex-grow: 1;
+   padding: 25px 12px;
+   border-radius: 20px;
+   border: 1px solid #363636;
+   color: #fff;
+   font-size: 20px;
+}
+.massanger img{
+   width: 48px;
+   height: 48px;
+   border-radius: 30px;
+   transition: all 0.2s ease-in;
+}
+.massanger:hover {
+   background-color: #1E1E1E;
+}
+/* Footer */
+.footer {
+   padding: 10px 0;
+   background-color: #1E1E1E;
+   color: #686868;
+}
+.footer-inner {
+   font-size: 15px;
+   text-align: center;
+}
+.footer-inner p +p {
+   margin-top: 8px;
+}
+
+/* Inner Page */
+
+.inner-page {
+   padding: 80px 0 40px 0;
+}
+.inner-page-details {
+   display: flex;
+   flex-direction: column;
+   row-gap: 25px;
+   margin-bottom: 40px;
+   text-align: center;
+   align-items: center;
+}
+.inner-page-title {
+   font-size: 52px;
+   font-weight: 700;
+}
+.inner-text-page {
+   max-width: 570px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 25px;
+   color: #555;
+   line-height: 1.5;
+}
+.inner-page-link {
+   color: #000;
+
+}
+.inner-page-link a {
+   color: #000;
+   text-decoration: underline;
+}
+.inner-page-img {
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 40px;
+}
+.inner-page-back {
+   max-width: 770px;
+   padding: 30px;
+   margin: 0 auto;
+   display: flex;
+   column-gap: 10px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: #000;
+   transition: all 0.2s;
+}
+.inner-page-back:hover {
+   background-color: #d7d7d7;
+}
+
