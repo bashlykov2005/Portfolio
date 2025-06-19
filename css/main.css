@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Base */
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/* Header */
+
+.header {
+   position: relative;
+   overflow: hidden;
+   padding-top: 80px;
+   padding-bottom: 80px;
+   /* background: #252525 linear-gradient(158deg, #2f2f2f 0%, #202020 100%); */
+   background-color: #000;
+   color: #fff;
+   border-bottom-right-radius: 100px;
+}
+.header .container {
+   position: relative;
+   z-index: 1;
+}
+
+.header-video {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   border-bottom-right-radius: 100px;
+   opacity: 0.35;
+}
+.header-row {
+   display: flex;
+   align-items: center;
+   column-gap: 60px;
+}
+.header-img {
+   border-radius: 80px;
+}
+.header-title {
+   margin-bottom: 10px;
+   font-weight: 700;
+   font-size: 60px;
+}
+.header-text {
+margin-bottom: 20px;
+font-size: 26px;
+font-weight: 300;
+}
+.header-btns {
+   display: flex;
+   column-gap: 20px;
+}
+.header-btn {
+   height: 48px;
+   padding-top: 15px;
+   padding-right: 25px;
+   padding-left: 25px;
+   background-color: #000;
+   border-radius: 8px;
+   color: #fff;
+   line-height: 1;
+   transition: all 0.2s ease-in;
+}
+.header-btn-outline {
+   height: 48px;
+   padding-top: 15px;
+   padding-right: 25px;
+   padding-left: 25px;
+   border: 1px solid #3b3b3b;
+   border-radius: 8px;
+   color: #fff;
+   line-height: 1;
+   transition: all 0.2s ease-in;
+}
+.header-btn:hover {
+   background-color: #1782CF;
+}
+.header-btn-outline:hover {
+   border-color: #1782CF;
+}
+
+/* Portfolio */
+
+.portfolio {
+   padding: 80px 0;
+}
+.portfolio-title {
+   margin-bottom: 65px;
+   font-size: 52px;
+   font-weight: 700;
+   text-align: center;
+}
+.projects {
+   display: flex;
+   flex-direction: column;
+   row-gap: 70px;
+   align-items: center;
+}
+.project {
+   text-align: center;
+}
+.project-img {
+   margin-bottom: 35px;
+   border-radius: 30px;
+   transition: opacity 0.2s ease-in;
+}
+.project-img:hover {
+   opacity: 0.8;
+}
+.project-title {
+   font-size: 26px;
+   margin-bottom: 35px;
+}
+.project-title a {
+   color: #000;
+   text-decoration: underline;
+}
+
+/* Contacts */
+
+.contacts {
+   padding-top: 80px;
+   padding-bottom: 80px;
+   background: #252525 linear-gradient(158deg, #2f2f2f 0%, #202020 100%);
+   color: #fff;
+   border-top-left-radius: 100px;
+}
+.contacts-title {
+   margin-bottom: 65px;
+   font-size: 52px;
+   font-weight: 700;
+   text-align: center;
+}
+.massangers {
+   display: flex;
+   column-gap: 30px;
+   row-gap: 30px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.massanger {
+   display: flex;
+   max-width: 270px;
+   column-gap: 15px;
+   align-items: center;
+   flex-grow: 1;
+   padding: 25px 12px;
+   border-radius: 20px;
+   border: 1px solid #363636;
+   color: #fff;
+   font-size: 20px;
+}
+.massanger img{
+   width: 48px;
+   height: 48px;
+   border-radius: 30px;
+   transition: all 0.2s ease-in;
+}
+.massanger:hover {
+   background-color: #1E1E1E;
+}
+/* Footer */
+.footer {
+   padding: 10px 0;
+   background-color: #1E1E1E;
+   color: #686868;
+}
+.footer-inner {
+   font-size: 15px;
+   text-align: center;
+}
+.footer-inner p +p {
+   margin-top: 8px;
+}
+
+/* Inner Page */
+
+.inner-page {
+   padding: 20px 0 40px 0;
+}
+.inner-page-details {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 40px;
+   text-align: center;
+   align-items: center;
+}
+.inner-page-title {
+   font-size: 42px;
+   font-weight: 700;
+}
+.inner-text-page {
+   max-width: 570px;
+   display: flex;
+   flex-direction: column;
+   color: #555;
+   line-height: 1.5;
+}
+.inner-page-link {
+   color: #000;
+
+}
+.inner-page-link a {
+   color: #000;
+   text-decoration: underline;
+}
+.inner-page-img {
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 40px;
+}
+.inner-page-back {
+   max-width: 770px;
+   padding: 30px;
+   margin: 0 auto;
+   display: flex;
+   column-gap: 10px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: #000;
+   transition: all 0.2s;
+}
+.inner-page-back:hover {
+   background-color: #d7d7d7;
+}
+
+/* стили для галереи магазина компьютерных компл */
+.screenshots-gallery {
+   display: flex;
+   width: calc(100% - 80px); /*отступы по 40px с каждой стороны */
+   margin: 0 40px 10px 40px;  /* Отступы */
+   gap: 60px;  /* Отступ между колонками */
+   flex-wrap: wrap;
+}
+
+.gallery-column {
+   flex: 1 1 calc(50% - 30px); /* 50% ширины минус половина gap (60px/2) */
+   min-width: 300px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.gallery-item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   background: #f5f5f5;
+}
+
+.gallery-item img {
+   max-width: 100%;
+   max-height: 100%;
+   width: auto;
+   height: auto;
+   object-fit: contain;
+   display: block;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+   .screenshots-gallery {
+      flex-direction: column;
+      gap: 15px;
+      width: calc(100% - 40px); /* отступы на мобильных */
+      margin: 0 20px 40px 20px;
+   }
+
+   .gallery-column {
+      flex: 1 1 100%;
+   }
+
+   .inner-page-title {
+      font-size: 36px;
+   }
+
+   .inner-page {
+      padding: 40px 0 20px 0;
+   }
+}
+
+@media (max-width: 480px) {
+   .inner-page-title {
+      font-size: 28px;
+   }
+
+   .gallery-item {
+      border-radius: 4px;
+   }
+
+   .screenshots-gallery {
+      width: calc(100% - 30px);
+      margin: 0 15px 30px 15px;
+   }
+}
+
+.inner-page-back {
+   max-width: 770px;
+   padding: 30px;
+   margin: 0 auto;
+   display: flex;
+   column-gap: 10px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: #000;
+   transition: all 0.2s;
+}
+
+.inner-page-back:hover {
+   background-color: #d7d7d7;
+}
+
+/* Основные стили текстового блока */
+.inner-text-page {
+   max-width: 80vw;
+   margin: 0 auto;
+   font-size: 1.1rem;
+   line-height: 1.6;
+   color: #555;
+   margin-bottom: 10px;
+}
+
+/* Заголовки */
+.description-title,
+.technologies-title {
+   font-size: 1.25rem;
+   font-weight: 600;
+   margin: 10px 0 5px 0;
+   color: #855526;
+}
+
+/* Список возможностей */
+.features-list {
+   background: #f8f8f8;
+   padding: 15px 20px;
+   border-radius: 8px;
+   font-size: 0.95rem;
+   line-height: 1.5;
+}
+
+.features-list::after {
+   content: ";";
+   opacity: 0; /* Скрываем последнюю точку с запятой */
+}
+
+/* Список технологий */
+.tech-list {
+   background: #f0f0f0;
+   padding: 12px 18px;
+   border-radius: 8px;
+   font-size: 0.9rem;
+   margin-bottom: 5px;
+}
+
+.tech-category {
+   font-weight: 600;
+   color: #333;
+   margin-right: 3px;
+}
+
+/* Разделители для читаемости */
+.features-list::before,
+.tech-list::before {
+   content: "";
+   display: inline-block;
+   width: 45px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+   .inner-text-page {
+      max-width: 90vw;
+      font-size: 1rem;
+   }
+
+   .features-list,
+   .tech-list {
+      padding: 10px 15px;
+      font-size: 0.85rem;
+   }
+}
+
+@media (max-width: 480px) {
+
+   .features-list,
+   .tech-list {
+      display: block; /* На маленьких экранах переходим на блоки */
+   }
+}
+.feature-item::before {
+   content: "•";
+   font-weight: bold;
+   position: absolute;
+   left: 5px;
+   color: #333;
+   font-size: 4.5em;
+   /* Увеличиваем размер точки */
+   line-height: 1;
+   /* Фиксируем выравнивание */
+   vertical-align: middle;
+}
+
+img,
+svg {
+   max-width: 80%;
+   height: auto;
+}
+
+/* Общие стили галереи путеводителя по пивоварням */
+.three-column-gallery {
+   display: flex;
+   width: 100%;
+   margin: 0 auto;
+   align-items: flex-start;
+
+   padding: 0 30 0 0px; /* Общий отступ по бокам контейнера */
+   box-sizing: border-box;
+}
+
+/* Стили для всех столбцов */
+.gallery-col {
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+}
+
+/* Первый столбец */
+.col-1 {
+   flex: 1 1 auto;
+   margin-left: 65px;
+   /* margin-right: 15px; */
+}
+
+/* Второй столбец (центральный) */
+.col-2 {
+   flex: 1 1 auto;
+}
+
+/* Третий столбец */
+.col-3 {
+   flex: 0 0 auto;
+   width: 33%;
+   /* margin-left: 15px; */
+   /* margin-right: 10px; */
+   gap: 8px;
+}
+
+/* Общие стили картинок */
+.gallery-img {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+}
+
+.gallery-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   display: block;
+   cursor: zoom-in;
+   /* Изменяем курсор при наведении */
+   transition: transform 0.3s;
+}
+
+.gallery-img img:hover {
+   transform: scale(1.02);
+   /* Легкий эффект увеличения при наведении */
+}
+
+/* Специфичные стили */
+.full-width-img {
+   width: 100%;
+   height: auto;
+}
+
+.auto-height-img {
+   width: 100%;
+   height: auto;
+}
+
+.third-height-img {
+   height: 30%;
+}
+
+.fourty-height-img {
+   height: 40%;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+   .three-column-gallery {
+      flex-direction: column;
+      padding: 0 15px;
+   }
+
+   .col-1,
+   .col-2,
+   .col-3 {
+      width: 100% !important;
+      margin: 0 0 20px 0 !important;
+      /* Сбрасываем горизонтальные отступы */
+   }
+
+   .third-height-img,
+   .fourty-height-img {
+      height: auto;
+      aspect-ratio: 16/9;
+   }
+
+   .col-3 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+   }
+
+   .col-3 .gallery-img {
+      flex: 1 1 45%;
+   }
+}
+
+@media (max-width: 576px) {
+   .three-column-gallery {
+      padding: 0 10px;
+   }
+
+   .col-3 {
+      flex-direction: column;
+   }
+
+   .col-3 .gallery-img {
+      width: 100%;
+      flex: none;
+   }
+}
+/* Стили для модального окна */
+.image-modal {
+   display: none;
+   position: fixed;
+   z-index: 1000;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.9);
+   overflow: auto;
+}
+
+.modal-scroll-container {
+   display: flex;
+   justify-content: center;
+   min-height: 100%;
+   padding: 40px 0;
+   box-sizing: border-box;
+}
+
+.modal-content {
+   width: auto;
+   height: auto;
+   max-height: none;
+   object-fit: contain;
+   animation: zoom 0.3s;
+}
+
+.close-modal {
+   position: fixed;
+   top: 20px;
+   right: 35px;
+   color: white;
+   font-size: 40px;
+   font-weight: bold;
+   cursor: pointer;
+   z-index: 1001;
+}
+
+.close-modal:hover {
+   color: #edb176;
+}
+
+@keyframes zoom {
+   from {
+      transform: scale(0.8);
+      opacity: 0;
+   }
+
+   to {
+      transform: scale(1);
+      opacity: 1;
+   }
+}
+
+/* Адаптивные корректировки */
+@media (max-width: 1024px) {
+   .modal-content {
+      width: 80vw !important;
+      height: auto !important;
+   }
+}
+
+@media (max-width: 768px) {
+   .modal-content {
+      width: 90vw !important;
+   }
+
+   .close-modal {
+      font-size: 35px;
+      right: 25px;
+   }
+}
+
+@media (max-width: 576px) {
+   .modal-content {
+      width: 95vw !important;
+   }
+
+   .close-modal {
+      font-size: 30px;
+      right: 15px;
+   }
+}
+/* Стили для сворачиваемых секций */
+.section-arrow {
+   margin-left: 10px;
+   font-size: 0.8em;
+   transition: transform 0.3s;
+}
+
+h3[class*="description-title"] {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 12px 15px;
+   background-color: #f5f5f5;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+
+h3[class*="description-title"]:hover {
+   background-color: #e9e9e9;
+}
+
+.features-list-help,
+.features-list-implemented {
+   padding: 15px 20px;
+   margin-top: 5px;
+   border-radius: 8px;
+   background-color: #f8f8f8;
+   border-left: 3px solid #edb176;
+}
+
+/* Сохраняем ваше оригинальное форматирование */
+.features-list-help p,
+.features-list-implemented p {
+   margin: 8px 0;
+   padding-left: 20px;
+   position: relative;
+}
+
+.features-list-help p:before,
+.features-list-implemented p:before {
+   content: "•";
+   position: absolute;
+   left: 5px;
+   font-weight: bold;
+   color: #855526;
+}
+
+/* Для многоуровневых списков */
+.features-list-help ul,
+.features-list-implemented ul {
+   margin-left: 30px;
+   list-style-type: circle;
+}
+
+.features-list-help li,
+.features-list-implemented li {
+   margin: 5px 0;
+}
+.section-arrow {
+   /* заменить на */
+   content: "";
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23855526"><path d="M7 10l5 5 5-5z"/></svg>');
+   background-repeat: no-repeat;
+   transition: transform 0.3s;
+}
+
+h3[class*="description-title"].active .section-arrow {
+   transform: rotate(180deg);
+}
+.center-title {
+   text-align: center;
+   justify-content: center !important;
+}
+
+.collapsible {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* Добавлено центрирование */
+   padding: 12px 15px;
+   background-color: #f5f5f5;
+   border-radius: 8px;
+   margin: 15px auto;
+   /* Центрирование блока */
+   max-width: 80%;
+   /* Ограничение ширины для лучшего вида */
+   transition: all 0.3s;
+}
+
+.description-title {
+   text-align: center;
+   /* Центрирование текста */
+   margin: 15px auto;
+   /* Отступы и центрирование */
+}
