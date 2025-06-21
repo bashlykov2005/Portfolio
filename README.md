@@ -12,5 +12,5 @@
 
 Клонируйте репозиторий:  
 git clone https://github.com/bashlykov2005/Portfolio.git  
-cd Portfolio 
+cd Portfolio  
 Откройте файл index.html
